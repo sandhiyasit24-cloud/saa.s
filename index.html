@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern SaaS Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Poppins', Arial, sans-serif;}
+body{background:#0F172A;color:#E5E7EB}
+
+/* Navbar */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 10%;
+}
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#38BDF8;
+}
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#cbd5f5;
+  font-size:15px;
+}
+nav a:hover{color:#fff}
+.btn{
+  padding:10px 24px;
+  border-radius:50px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(135deg,#6366F1,#38BDF8);
+  color:white;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:110px 10%;
+}
+.hero small{
+  background:#1f2937;
+  padding:6px 14px;
+  border-radius:50px;
+  color:#38BDF8;
+  font-size:13px;
+}
+.hero h1{
+  font-size:60px;
+  margin-top:15px;
+  line-height:1.1;
+}
+.hero p{
+  margin:15px 0;
+  color:#9CA3AF;
+  font-size:18px;
+}
+.actions button{margin:10px}
+
+/* Features */
+.features{
+  padding:80px 10%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+.card{
+  background:#111827;
+  padding:28px;
+  border-radius:18px;
+  border:1px solid #1f2937;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#38BDF8;
+}
+.card h3{margin-bottom:8px;color:#38BDF8}
+
+/* Pricing */
+.pricing{
+  padding:80px 10%;
+  text-align:center;
+}
+.plan-boxes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  margin-top:35px;
+}
+.plan{
+  background:#111827;
+  padding:35px;
+  border-radius:18px;
+  border:1px solid #1f2937;
+}
+.plan:hover{
+  border-color:#6366F1;
+}
+.price{
+  font-size:40px;
+  margin:15px 0;
+  color:#38BDF8;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:45px 0;
+  color:#9CA3AF;
+}
+
+@media(max-width:700px){
+  .hero h1{font-size:36px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SaaSify</div>
+  <nav>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+  </nav>
+  <button class="btn">Get Started</button>
+</header>
+
+<section class="hero">
+  <small>🚀 Next-Gen Cloud Platform</small>
+  <h1>Powerful SaaS to Grow Your Business Faster</h1>
+  <p>Automate workflows, manage customers, and scale with confidence.</p>
+
+  <div class="actions">
+    <button class="btn">Start Free Trial</button>
+    <button class="btn">Watch Demo</button>
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>⚡ Ultra Fast</h3>
+    <p>Optimized for speed, delivering instant performance.</p>
+  </div>
+
+  <div class="card">
+    <h3>🔒 Secure</h3>
+    <p>Enterprise-level protection to keep your data safe.</p>
+  </div>
+
+  <div class="card">
+    <h3>📊 Smart Analytics</h3>
+    <p>Track everything with real-time insights.</p>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Choose Your Plan</h2>
+  <p>No contracts. Cancel anytime.</p>
+
+  <div class="plan-boxes">
+    <div class="plan">
+      <h3>Starter</h3>
+      <p class="price">$9/mo</p>
+      <p>Perfect for individuals</p>
+      <button class="btn">Get Plan</button>
+    </div>
+
+    <div class="plan">
+      <h3>Pro</h3>
+      <p class="price">$29/mo</p>
+      <p>Ideal for teams</p>
+      <button class="btn">Get Plan</button>
+    </div>
+
+    <div class="plan">
+      <h3>Enterprise</h3>
+      <p class="price">Custom</p>
+      <p>For large companies</p>
+      <button class="btn">Contact</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 SaaSify — All Rights Reserved
+</footer>
+
+</body>
+</html>
